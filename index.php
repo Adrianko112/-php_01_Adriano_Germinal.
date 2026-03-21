@@ -1,12 +1,14 @@
-
 <?php
 
-$Integer = 42;  
-$Float = 3.14;
-$String = "Ciao mi chiamo Adriano!";
-$Boolean = true;
+const INTERO = 42;  
+const VIRGOLA = 3.14;
+const STRINGA = "Ciao mi chiamo Adriano!";
+const BOOLEANO = true;
 
-var_dump($Integer);
-var_dump($Float);   
-var_dump($String);
-var_dump($Boolean);
+var_dump(INTERO);
+var_dump(VIRGOLA);   
+var_dump(STRINGA);
+var_dump(BOOLEANO);
+
+//pusho traccia aggiornata con constanti e var_dump
+
