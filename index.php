@@ -1,29 +1,46 @@
-
 <?php
 
-//Date le seguenti variabili:
+// Dati i seguenti array:
+$words1 = [
+  'vostro',
+  67,
+  'essere',
+  'colle',
+  'mi',
+  'sempre',
+[
+  'oscura',
+  'era',
+  89,
+  [
+  'mezzo',
+   'E'
+  ],
+'ritrovai',
+'per'
+],
+'diritta'
+];
 
-// $1text = "Marco";
-// $text2 = "hai";
-// $text.3 = "sete";
-// $text4 = "?";
-// @text5 = "Perchè";
-// $te-xt6 = '$text2';
-// $text 7 = 'bevuto';
-// $text8 = "tutto"
+$words2 = [
+  'elemento1' => 25.89,
+  'elemento2' => 'possa',
+  'elemento3' => [
+    'Virgilio',
+    'Favore',
+    'favore',
+    ['fortuna']
+  ],
+ 'fine' => '!'
+];
 
-// correggi eventuali errori e stampa correttamente a terminale la stringa: “Marco Hai sete? Perche' hai bevuto tutto.“ -->
 
-//sistemo le variabili 
+// Crea una variabile di tipo Stringa chiamata $results che stampi a terminare il seguente testo, attraverso l’accesso agli array sopra: “Nel mezzo di cammin di nostra vita mi ritrovai per una selva oscura, che' la diritta via era smarrita“.
 
-$text1 = "Marco";
-$text2 = "hai";
-$text3 = "sete";
-$text4 = "?";
-$text5 = "Perchè";
-$text6 = $text2;
-$text7 = "bevuto";
-$text8 = "tutto";
+// HINT:
+// Non tutti gli elementi all’interno dell’array sono utili, e alcuni elementi mancano proprio. Scegli come risolvere il problema nel modo piu' opportuno: nuove variabili, concatenamenti, ecc ecc.
 
-//stampo a terminale la stringa corretta
-echo $text1 . " " . $text2 . " " . $text3 . $text4 . " " . $text5 . " " . $text6 . " " . $text7 . " " . $text8 . ".";
+
+$results = "Nel " . $words1[6][3][0] . " di cammin di nostra vita mi ritrovai per una selva " . $words1[6][0] . ", che' la diritta via era smarrita" . $words2['fine'];
+
+echo $results;
