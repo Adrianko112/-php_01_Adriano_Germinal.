@@ -1,18 +1,14 @@
 
 <?php
 
-$numeri=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10,32, 45, 67, 89, 90];
-
-//ho bisogno delle variabili che contengano la somma e il totale dei numeri pari 
-$somma=0;
-$totaleNumeriPari= 0;
-
-foreach($numeri as $numero){
-  if ($numero % 2 == 0){
-    $somma += $numero;
-    $totaleNumeriPari++;};
+for ($i=1; $i < 100; $i++) { 
+    if ($i % 3 == 0 && $i % 5 == 0) {
+        echo "HACKADEMY\n";
+    } elseif ($i % 3 == 0) {
+        echo "PHP\n";
+    } elseif ($i % 5 == 0) {
+        echo "JAVASCRIPT\n";
+    } else {
+        echo "$i\n";
+    }
 };
-
-$media= $somma/$totaleNumeriPari; 
-
-echo "La media dei numeri pari è {$media}";
